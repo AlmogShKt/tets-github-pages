@@ -11,14 +11,29 @@
         <h1>C Lab Questions and Answers</h1>
     </header>
     <section class="qa">
-        <h2>Question 1</h2>
-        <p><strong>Q:</strong> What is a pointer in C?</p>
-        <p><strong>A:</strong> A pointer is a variable that stores the memory address of another variable.</p>
+        <div class="question">
+            <h2>Question 1</h2>
+            <p><strong>Q:</strong> What is a pointer in C?</p>
+        </div>
+        <div class="answer">
+            <p><strong>A:</strong> A pointer is a variable that stores the memory address of another variable.</p>
+        </div>
     </section>
     <section class="qa">
-        <h2>Question 2</h2>
-        <p><strong>Q:</strong> How do you declare a pointer in C?</p>
-        <p><strong>A:</strong> You declare a pointer by specifying the type it points to, followed by an asterisk (*) and the pointer name, e.g., <code>int *ptr;</code>.</p>
+        <div class="question">
+            <h2>Question 2</h2>
+            <p><strong>Q:</strong> How do you declare a pointer in C?</p>
+        </div>
+        <div class="answer">
+            <p><strong>A:</strong> You declare a pointer by specifying the type it points to, followed by an asterisk (*) and the pointer name, e.g., <code>int *ptr;</code>.</p>
+        </div>
     </section>
+    <script>
+        document.querySelectorAll('.question').forEach(question => {
+            question.addEventListener('click', () => {
+                question.nextElementSibling.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 </html>
