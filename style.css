@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background: #333;
+    background: #007bff;
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -19,7 +19,7 @@ header h1 {
 }
 
 nav {
-    background: #444;
+    background: #0056b3;
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -55,6 +55,32 @@ section.qa {
 
 section.qa h2 {
     margin-top: 0;
+}
+
+.question {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    background: #f1f9ff;
+    margin-bottom: 10px;
+    transition: background 0.3s;
+}
+
+.question:hover {
+    background: #e3f2fd;
+}
+
+.answer {
+    display: none;
+    padding: 10px;
+    border-left: 3px solid #007bff;
+    margin-bottom: 20px;
+    background: #e7f3ff;
+}
+
+.answer.active {
+    display: block;
 }
 
 code {
